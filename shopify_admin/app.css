@@ -1,0 +1,55 @@
+:root {
+    /* Navigation bar colors */
+    --grey-50: #656266;
+    --grey-100: #616161;
+    --grey-200: #322F33;
+    --grey-300: #1C181D;
+    --green: #36FBA1;
+
+    /* Font colors */
+    --font-color-light: #E3E3E3;
+    --font-color-mid: #616161;
+    --font-color-dark: #475467;
+
+    /* Strokes */
+    --stroke-50: #EBEBEB;
+    --stroke-100: #000000/7%;
+    --stroke-200: #FFFFFF/20%;
+
+    /* State */
+    --hover-state: #F7F7F7;
+    --pressed-state: #F0F0F0;
+    --focused-state: #005BD3;
+
+    /* Plain */
+    --white: #FFFFFF;
+    --background: #F1F1F1;
+
+    /* FONT SIZES */
+    --font-size-inter-12: 12px;
+    --font-size-inter-13: 13px;
+    --font-size-inter-14: 14px;
+
+    --font-size-text-12: 12px;
+    --font-size-text-13: 13px;
+
+    --font-size-medium-12: 12px;
+    --font-size-medium-13: 13px;
+    --font-size-medium-14: 14px;
+
+    --font-size-semibold-12: 12px;
+    --font-size-semibold-13: 13px;
+    --font-size-semibold-14: 14px;
+
+    /* FONT WEIGHT */
+    --font-weight-regular: normal;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+
+    /* LINE HEIGHT */
+    --line-height-130: 1.3;
+    --line-height-140: 1.4;
+
+    /* LETTER SPACING */
+    --letter-spacing-0: 0;
+}
