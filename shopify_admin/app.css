@@ -414,3 +414,353 @@ hr {
     background-color: var(--background);
     margin: 14px 0;
 }
+
+/* Onboarding section styles */
+.onboarding-section {
+    width: 600px;
+    margin: auto;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+.onboarding-section header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey-300);
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin-bottom: 7px;
+
+    @media screen and (max-width: 767px) {
+        border-radius: 0;
+    }
+}
+
+.onboarding-section header div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+.onboarding-section header div:nth-child(1) .delete-sm {
+    @media screen and (min-width: 767px) {
+        display: none;
+    }
+}
+
+.onboarding-section header .first-p {
+    color: var(--font-color-light);
+    font-size: var(--font-size-inter-13);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-0);
+    margin-bottom: 6px;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+.onboarding-section header div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.onboarding-section header div:nth-child(2) a {
+    text-decoration: none;
+    background-color: inherit;
+    font-size: var(--font-size-inter-12);
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--background);
+    border: none;
+    cursor: pointer;
+}
+
+.onboarding-section header div:nth-child(2) a:active,
+.onboarding-section header div:nth-child(2) a:hover {
+    border: none;
+    text-decoration: none;
+}
+
+.onboarding-section header div:nth-child(2) button:focus {
+    background-color: var(--white);
+    color: var(--grey-300);
+    border: 2px solid var(--focused-state);
+    text-decoration: none;
+}
+
+.onboarding-section header div:nth-child(2) img {
+    cursor: pointer;
+}
+
+.onboarding-section header div:nth-child(2) .delete-lg {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+/* onboarding-section-info */
+.onboarding-section-info {
+    border-radius: 18px;
+    padding: 5px;
+    background-color: var(--white);
+    border: 2px solid var(--stroke-50);
+
+    @media screen and (max-width: 767px) {
+        border-radius: 0;
+    }
+}
+
+.onboarding-section-info header {
+    width: 100%;
+    background-color: inherit;
+    padding-left: 16px;
+}
+
+.onboarding-section-info header .text-icon .show-icon {
+    display: block;
+    cursor: pointer;
+}
+
+.hide-icon {
+    display: none;
+}
+
+.onboarding-section-info header div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+.onboarding-section-info header div:nth-child(1)>p {
+    color: var(--grey-300);
+    font-size: var(--font-size-semibold-14);
+    font-weight: var(--font-weight-semibold);
+}
+
+.onboarding-section-info header>p {
+    color: var(--font-color-mid);
+    font-size: var(--font-size-inter-13);
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.onboarding-section-info header .completed {
+    font-weight: var(--font-weight-medium);
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 5px;
+}
+
+.progress-bar progress {
+    width: 72px;
+    height: 4px;
+    appearance: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--background);
+}
+
+.progress-bar span {
+    font-size: var(--font-size-inter-12);
+}
+
+progress::-webkit-progress-bar {
+    background-color: var(--background);
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background-color: var(--grey-200);
+    border-radius: 20px;
+}
+
+progress::-moz-progress-bar {
+    background-color: var(--grey-200);
+}
+
+.article {
+    padding: 2px;
+    position: relative;
+}
+
+.close-container {
+    display: hidden;
+    visibility: hidden;
+    height: 0;
+}
+
+.setup-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 2px;
+    border-radius: 18px;
+    padding: 2px;
+}
+
+.add-bg {
+    background-color: var(--background);
+}
+
+.article .setup-guide .hide-img {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.article .step-one {
+    display: flex;
+    align-items: start;
+    gap: 5px;
+}
+
+.img-container {
+    position: relative;
+    min-width: 34px;
+}
+
+.img-container-hide {
+    visibility: hidden;
+    display: none;
+    position: absolute;
+}
+
+.img-container img {
+    position: absolute;
+    cursor: pointer;
+}
+
+.solid_circle,
+.half_circle,
+.checked {
+    visibility: hidden;
+}
+
+.show_solid_circle,
+.show_checked {
+    visibility: visible;
+}
+
+.hide-normal {
+    visibility: hidden;
+    display: none;
+}
+
+.show_half_circle {
+    visibility: visible;
+    animation-name: loading;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    transition: all 0.3s ease;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(25deg);
+    }
+
+    50% {
+        transform: rotate(50deg);
+    }
+
+    75% {
+        transform: rotate(75deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+.article .step-one h6 {
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 1rem;
+    font-size: var(--font-size-semibold-14);
+}
+
+.article .step-one div p {
+    font-size: var(--font-size-inter-12);
+}
+
+.article .step-one div p a {
+    text-decoration: none;
+}
+
+.hide-container {
+    visibility: hidden;
+    display: none;
+}
+
+.default h6 {
+    cursor: pointer;
+    color: var(--font-color-dark);
+}
+
+.hide-img,
+.display {
+    visibility: hidden;
+    display: none;
+}
+
+.show {
+    visibility: visible;
+    display: block;
+}
+
+.hide {
+    visibility: hidden;
+    display: none;
+}
+
+.display a {
+    color: var(--focused-state);
+    font-size: var(--font-size-inter-13);
+    display: block;
+}
+
+.display-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+.display-btn button {
+    padding: 6px 1rem;
+    border-radius: 10px;
+    color: var(--font-color-light);
+    background-color: var(--grey-200);
+    cursor: pointer;
+
+}
+
+.display-btn span {
+    cursor: pointer;
+    color: var(--grey-200);
+    font-weight: 600;
+}
