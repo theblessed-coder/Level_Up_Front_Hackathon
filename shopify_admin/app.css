@@ -266,3 +266,151 @@ body {
     padding: 2px;
     border-radius: 5px;
 }
+
+/* modal */
+
+.details-modal {
+    display: hidden;
+    visibility: hidden;
+}
+
+/* modal */
+
+.show-info-modal {
+    display: block;
+    visibility: visible;
+}
+
+/* Styles for the details section within username */
+.notification-username .details-modal {
+    background-color: var(--white);
+    border-radius: 14px;
+    margin-top: 10px;
+    z-index: 999;
+    position: absolute;
+    width: 300px;
+    left: -4%;
+    top: 40px;
+    transform: translateX(-50%);
+    padding: 10px;
+    border: 2px solid var(--stroke-50);
+
+    @media screen and (max-width: 767px) {
+        width: 300px;
+        left: 30%;
+        transform: translateX(-90%);
+    }
+}
+
+.notification-username .details-modal .user-details-container {
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 2px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.notification-username .details-modal .user-details-container :nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.notification-username .details-modal .user-details-container :nth-child(1) p {
+    color: var(--font-color-mid);
+    padding: 3px;
+    margin: 2px;
+    border-radius: 5.25px;
+    background-color: var(--green);
+}
+
+.details-modal .user-details-container h2 {
+    font-size: var(--font-size-inter-13);
+    font-weight: var(--font-weight-semibold);
+}
+
+.notification-username .details-modal .all-stores {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sub-container a,
+.user-email {
+    text-decoration: none;
+    color: var(--font-color-dark);
+}
+
+.user-email {
+    display: block;
+    min-width: 100%;
+    margin: 0.5rem 0;
+}
+
+.user-email:hover {
+    min-width: 100;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding: 6px;
+}
+
+.img-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.notification-username .details-modal .all-stores .header {
+    color: var(--font-color-mid);
+    font-size: var(--font-size-inter-14);
+    font-weight: var(--font-weight-medium);
+}
+
+.notification-username .details-modal .sub-container {
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding: 0 0.3rem;
+    font-size: var(--font-size-inter-14);
+}
+
+.name-email-section span {
+    min-width: 100%;
+    display: block;
+}
+
+.display p {
+    color: var(--font-color-mid);
+}
+
+.details-modal .sub-container:hover,
+.name-email-section span:hover {
+    border-radius: 8px;
+    border: none;
+    background-color: var(--background);
+    padding: 6px;
+}
+
+.details-modal .sub-container:active,
+.name-email-section span:active {
+    border-radius: 8px;
+    border: none;
+    background-color: var(--background);
+    padding: 6px;
+}
+
+.details-modal .sub-container:focus,
+.name-email-section span:focus {
+    border: 2px solid var(--focused-state);
+    border-radius: 8px;
+    padding: 6px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--background);
+    margin: 14px 0;
+}
