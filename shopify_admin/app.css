@@ -66,3 +66,203 @@ body {
     background-color: var(--background);
     font-family: Inter;
 }
+
+/* NavBar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: var(--grey-300);
+    gap: 9.8px;
+    margin-bottom: 32px;
+}
+
+.navbar .img {
+    object-fit: contain;
+}
+
+.navbar .big-screen {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.navbar .small-screen {
+    @media screen and (min-width: 767px) {
+        display: none;
+    }
+}
+
+/* Search section styles */
+.navbar .search-section {
+    max-width: 480px;
+    width: 480px;
+    background-color: var(--grey-200);
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    flex: 1;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid var(--font-color-mid);
+    cursor: pointer;
+}
+
+.navbar .search-section input[type='text'] {
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.input:active {
+    border: none;
+    outline: none;
+}
+
+.input:focus {
+    border: none;
+}
+
+.navbar .search-section input[type='text']::placeholder {
+    color: var(--font-color-light);
+}
+
+.search-section:hover {
+    border: 1px solid var(--hover-state);
+}
+
+.search-section:active,
+.search-section:focus {
+    border: 1px solid var(--white);
+}
+
+/* notification modal */
+.notifications {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.notification-container .alert-modal-container {
+    background-color: var(--white);
+    border-radius: 14px;
+    margin-top: 20px;
+    z-index: 999;
+    position: absolute;
+    width: 380px;
+    height: 125px;
+    left: -20%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border: 2px solid var(--stroke-50);
+
+    @media screen and (max-width: 767px) {
+        width: 350px;
+        height: 136px;
+        left: 50%;
+        transform: translateX(-80%);
+    }
+}
+
+.alert-modal-container {
+    display: hidden;
+    visibility: hidden;
+}
+
+.show-notification-modal {
+    display: block;
+    visibility: visible;
+}
+
+.notification-container img {
+    cursor: pointer;
+}
+
+.notification-container .alert-modal-container .alert-modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--grey-300);
+}
+
+.notification-container .alert-modal-container .alert-modal .alert-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.notification-container .alert-modal-container p {
+    margin-top: 15px;
+    font-size: var(--font-size-inter-14);
+    font-weight: var(--font-weight-semibold);
+    color: var(--grey-100);
+    background-color: var(--background);
+    padding: 0.5rem 0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.notification-username {
+    background-color: var(--grey-200);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.notification-username>h2 {
+    color: var(--font-color-light);
+    padding: 4px;
+    font-size: var(--font-size-inter-12);
+    font-weight: var(--font-weight-medium);
+    padding: 0.5rem;
+    color: var(--white);
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.notification-username>p {
+    background-color: var(--green);
+    color: var(--font-color-mid);
+    padding: 0.2rem;
+    border-radius: 8px;
+}
+
+.notification-container {
+    padding: 4px;
+    max-width: max-content;
+    position: relative;
+    border-radius: 8px;
+    background-color: var(--grey-200);
+    cursor: pointer;
+    color: var(--font-color-light);
+}
+
+.notification-container:hover,
+.notification-username:hover {
+    background-color: var(--grey-100);
+}
+
+.notification-container:focus,
+.notification-username:focus {
+    background-color: var(--grey-100);
+    border: 2px solid var(--focused-state);
+}
+
+.notification-container:active,
+.notification-username:active {
+    background-color: var(--grey-100);
+}
+
+.close-notification:hover {
+    border: 1px solid var(--blue);
+    padding: 2px;
+    border-radius: 5px;
+}
